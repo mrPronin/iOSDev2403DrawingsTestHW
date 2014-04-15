@@ -43,6 +43,12 @@
     [self setSlidersWithColor:self.color];
     [self setSlidersLabelWithColor:self.color];
     
+    for (UIView* view in self.view.subviews) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            view.layer.cornerRadius = CGRectGetHeight(view.frame) / 2;
+        }
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
