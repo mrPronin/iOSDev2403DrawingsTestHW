@@ -39,7 +39,7 @@
     self.eraserButton.adjustsImageWhenHighlighted = NO;
     
     [self propertyInitialization];
-    [self drowBrushPreview:self.brushPreview withColor:self.color andSize:self.brushSize];
+    [self drowBrushPreview:self.brushPreview withColor:self.color Size:self.brushSize andOpacity:self.brushOpacity];
     [self setSlidersWithColor:self.color];
     [self setSlidersLabelWithColor:self.color];
     
@@ -48,7 +48,6 @@
             view.layer.cornerRadius = CGRectGetHeight(view.frame) / 2;
         }
     }
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,10 +66,11 @@
     
 }
 
-- (void) drowBrushPreview:(UIImageView*) preview withColor:(UIColor*) color andSize:(CGFloat) size {
+- (void) drowBrushPreview:(UIImageView*) preview withColor:(UIColor*) color Size:(CGFloat) size andOpacity:(CGFloat) alpha {
     
     // set label value
     self.brushSizeValueLabel.text = [NSString stringWithFormat:@"%.2f", size];
+    self.brushOpacityValueLabel.text = [NSString stringWithFormat:@"%.2f", alpha];
     
     // initialization
     UIGraphicsBeginImageContext(preview.frame.size);
@@ -197,7 +197,7 @@
     if ([sender.backgroundColor getRed:&r green:&g blue:&b alpha:&a]) {
         
         self.color = [UIColor colorWithRed:r green:g blue:b alpha:self.brushOpacity];
-        [self drowBrushPreview:self.brushPreview withColor:self.color andSize:self.brushSize];
+        [self drowBrushPreview:self.brushPreview withColor:self.color Size:self.brushSize andOpacity:self.brushOpacity];
         
         [self setSlidersWithColor:self.color];
         [self setSlidersLabelWithColor:self.color];
@@ -221,7 +221,7 @@
     if ([self.color getRed:&r green:&g blue:&b alpha:&a]) {
         
         self.color = [UIColor colorWithRed:r green:g blue:b alpha:self.brushOpacity];
-        [self drowBrushPreview:self.brushPreview withColor:self.color andSize:self.brushSize];
+        [self drowBrushPreview:self.brushPreview withColor:self.color Size:self.brushSize andOpacity:self.brushOpacity];
     }
 }
 
@@ -257,14 +257,14 @@
     
     self.color = [UIColor colorWithRed:r green:g blue:b alpha:self.brushOpacity];
     [self setSlidersLabelWithColor:self.color];
-    [self drowBrushPreview:self.brushPreview withColor:self.color andSize:self.brushSize];
+    [self drowBrushPreview:self.brushPreview withColor:self.color Size:self.brushSize andOpacity:self.brushOpacity];
     
 }
 
 - (IBAction)brushSizeValueChanged:(UISlider *)sender {
     
     self.brushSize = self.brushSizeSlider.value;
-    [self drowBrushPreview:self.brushPreview withColor:self.color andSize:self.brushSize];
+    [self drowBrushPreview:self.brushPreview withColor:self.color Size:self.brushSize andOpacity:self.brushOpacity];
 }
 
 @end
