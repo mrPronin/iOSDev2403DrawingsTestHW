@@ -21,6 +21,7 @@
 		3E7A05BF18FAEF2100B0E7D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7A05A118FAEF2100B0E7D7 /* UIKit.framework */; };
 		3E7A05C718FAEF2100B0E7D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A05C518FAEF2100B0E7D7 /* InfoPlist.strings */; };
 		3E7A05C918FAEF2100B0E7D7 /* _403DrawingsTestHWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A05C818FAEF2100B0E7D7 /* _403DrawingsTestHWTests.m */; };
+		A218297C19019F55007B0F0F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A218297B19019F55007B0F0F /* README.md */; };
 		A2D5B4EC18FB2A20000208EA /* Eraser01.gif in Resources */ = {isa = PBXBuildFile; fileRef = A2D5B4E818FB2A20000208EA /* Eraser01.gif */; };
 		A2D5B4ED18FB2A20000208EA /* Eraser02.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D5B4E918FB2A20000208EA /* Eraser02.png */; };
 		A2D5B4EE18FB2A20000208EA /* Eraser03.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D5B4EA18FB2A20000208EA /* Eraser03.png */; };
@@ -57,6 +58,7 @@
 		3E7A05C418FAEF2100B0E7D7 /* 2403DrawingsTestHWTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2403DrawingsTestHWTests-Info.plist"; sourceTree = "<group>"; };
 		3E7A05C618FAEF2100B0E7D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3E7A05C818FAEF2100B0E7D7 /* _403DrawingsTestHWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _403DrawingsTestHWTests.m; sourceTree = "<group>"; };
+		A218297B19019F55007B0F0F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		A2D5B4E818FB2A20000208EA /* Eraser01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Eraser01.gif; path = Images/Eraser01.gif; sourceTree = "<group>"; };
 		A2D5B4E918FB2A20000208EA /* Eraser02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Eraser02.png; path = Images/Eraser02.png; sourceTree = "<group>"; };
 		A2D5B4EA18FB2A20000208EA /* Eraser03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Eraser03.png; path = Images/Eraser03.png; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		3E7A05A318FAEF2100B0E7D7 /* 2403DrawingsTestHW */ = {
 			isa = PBXGroup;
 			children = (
+				A218297B19019F55007B0F0F /* README.md */,
 				3E7D4CAA18FB019800CAB6B2 /* Images */,
 				3E7A05AC18FAEF2100B0E7D7 /* RITAppDelegate.h */,
 				3E7A05AD18FAEF2100B0E7D7 /* RITAppDelegate.m */,
@@ -256,6 +259,7 @@
 				3E7A05A818FAEF2100B0E7D7 /* InfoPlist.strings in Resources */,
 				A2D5B4EF18FB2A20000208EA /* Eraser04.png in Resources */,
 				A2D5B4EE18FB2A20000208EA /* Eraser03.png in Resources */,
+				A218297C19019F55007B0F0F /* README.md in Resources */,
 				3E7A05B118FAEF2100B0E7D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
